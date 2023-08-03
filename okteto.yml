@@ -9,7 +9,15 @@ build:
     target: dev
 
 dependencies:
-  - https://github.com/okteto/movies-multi-repo
+  multirepo:
+    repository: https://github.com/okteto/movies-multi-repo
+    manifest: okteto.yaml
+    branch: ${BRANCH_NAME}
+    variables:
+      ENVIRONMENT: development
+      DEBUG: true
+    wait: true
+    timeout: 15m
 
 deploy:
   - name: Deploy Frontend
