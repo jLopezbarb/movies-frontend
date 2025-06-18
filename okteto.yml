@@ -11,11 +11,7 @@ build:
 dependencies:
   multirepo:
     repository: https://github.com/okteto/movies-multi-repo
-    manifest: okteto.yaml
-    branch: ${BRANCH_NAME}
-    variables:
-      ENVIRONMENT: development
-      DEBUG: true
+    branch: main
     wait: true
     timeout: 15m
 
