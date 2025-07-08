@@ -33,5 +33,5 @@ spec:
           readinessProbe:
             periodSeconds: 1
             httpGet:
-              path: /
+              path: /a
               port: http

@@ -12,7 +12,6 @@ dependencies:
   movies-multi-repo:
     repository: https://github.com/okteto/movies-multi-repo
     branch: main
-    wait: true
     timeout: 15m
 
 deploy:
