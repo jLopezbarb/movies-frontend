@@ -9,7 +9,7 @@ build:
     target: dev
 
 dependencies:
-  multirepo:
+  movies-multi-repo:
     repository: https://github.com/okteto/movies-multi-repo
     branch: main
     wait: true
